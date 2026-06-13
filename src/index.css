@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-canvas text-ink antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-fire text-white px-4 py-2 rounded-md text-sm font-medium
+           hover:bg-fire-dark transition-all duration-150
+           disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply bg-white text-ink border border-stone px-4 py-2 rounded-md text-sm font-medium
+           hover:bg-canvas transition-all duration-150;
+  }
+  .card {
+    @apply bg-white rounded-lg border border-stone;
+  }
+  .input {
+    @apply w-full border border-stone rounded-md px-3 py-2 text-sm bg-white
+           focus:outline-none focus:ring-2 focus:ring-fire/20 focus:border-fire/60
+           transition-colors placeholder:text-ink/30;
+  }
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-medium tracking-wide;
+  }
+  .page-eyebrow {
+    @apply text-[10px] uppercase tracking-[0.15em] text-ink/40 font-medium mb-1;
+  }
+  .page-title {
+    font-family: 'Syne', sans-serif;
+    @apply text-2xl font-700 text-ink tracking-tight leading-none;
+  }
+  .stat-number {
+    font-family: 'Syne', sans-serif;
+    @apply text-3xl font-700 leading-none tracking-tight;
+  }
+  .section-label {
+    @apply text-[10px] uppercase tracking-[0.12em] text-ink/40 font-medium;
+  }
+}
