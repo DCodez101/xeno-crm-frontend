@@ -1,4 +1,3 @@
-```markdown
 # XenoCRM — Frontend
 
 AI-native Mini CRM for D2C fashion brands. Built for the Xeno SDE Internship Assignment 2026.
@@ -107,4 +106,3 @@ Make sure the backend and channel service are also running locally. See the back
 ## Related Repository
 
 - **Backend + Channel Service:** https://github.com/DCodez101/xeno-crm-backend
-```
